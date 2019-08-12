@@ -6,7 +6,7 @@ form {
   
   h1{
    font-family: 'Lexend Exa', sans-serif;
-    color:orangered;
+    color: lightblue;
 }
 
   /* Full-width inputs */
@@ -21,7 +21,7 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: orangered;
+    background-color: lightblue;
     color: whitesmoke;
     padding: 14px 20px;
     margin: 8px 0;
@@ -46,7 +46,7 @@ form {
   .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-    background: ;
+    background: lightbluess;
   }
   
   /* Avatar image */
