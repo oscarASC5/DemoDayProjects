@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>MySneakersHomepage</title>
+   <link rel="stylesheet" href="login.css">
+   
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.css" />
 </head>
 <body>
-                <div class="imgcontainer">
-                    <h1> MEDULE LOGIN</h1>
-                </div>
-                <div class="container"><link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-              
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-              
-                  <button type="submit">Login</button>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                  </label>
-                </div>
-              <form>
-                <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-              </form>
-    
+   <div class="Head">
+
+</div>
+       <div id="firebaseui-auth-container"></div>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/4.1.0/firebaseui.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+<script>
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyBHpdIXWBZuPvoB54decPpTeQDdRdu9Ilo",
+    authDomain: "medule-c3261.firebaseapp.com",
+    databaseURL: "https://medule-c3261.firebaseio.com",
+    projectId: "medule-c3261",
+    storageBucket: "",
+    messagingSenderId: "1030045706317",
+    appId: "1:1030045706317:web:5ac9e23ff4d029f5"
+ };
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+</script>
+<script src="login.js"></script>
 </body>
 </html>
