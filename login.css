@@ -3,10 +3,12 @@ form {
     border: 3px solid  whitesmoke;
     background: orangered;
   }
-  
+  body {
+    background-color: red;
+  }
   h1{
    font-family: 'Lexend Exa', sans-serif;
-    color: lightblue;
+    text-align: center;
 }
 
   /* Full-width inputs */
@@ -46,7 +48,7 @@ form {
   .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-    background: lightbluess;
+    background: lightblue;
   }
   
   /* Avatar image */
