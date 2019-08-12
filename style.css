@@ -50,4 +50,12 @@ nav {
   }
   .profilepic{
       width: 100%;
+      display: flex;
+  }
+  img{
+    width: 33%;
+    height:33%;
+  }
+  .username{
+    font-color
   }
