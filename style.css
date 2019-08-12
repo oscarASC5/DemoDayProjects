@@ -7,6 +7,10 @@ nav {
     display: flex;
     height: 70px;
 }
+.Logo {
+  display: block;
+  margin: 0 auto;
+}
 .Link {
     display: flex;
     flex-direction: column;
@@ -115,7 +119,7 @@ nav {
     width: 80%;
   
    overflow: hidden;
-    background-color: #333;
+    /* background-color: #333; */
     font-family: Arial;
   }
   
@@ -142,7 +146,7 @@ nav {
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: lightblue;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
