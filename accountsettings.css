@@ -1,0 +1,42 @@
+body{
+    background-color: orangered;
+    font-family: 'Russo One', sans-serif;
+}
+  /* Safari 4.0 - 8.0 */
+  
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+     border: 1px solid #ccc; 
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  
+  
+  /* #Jordan{
+    display: inline;
+    margin: auto;
+  } */
+.Head{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+@media (max-width: 600px){
+  #Jordan{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+  }
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+ 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="settings.css">
+<script src="settings.js" defer></script>
+​
+<html>
+  <head>
+    <title>Medule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Blinker|Russo+One|Thasadith&display=swap" rel="stylesheet">
+    
+​
+​
+​
+​
+​
+​
+​
+​
+​
+  </head>
+​
+  
+​
+<body>
+​
+​
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+​
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+​
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+    apiKey: "AIzaSyBHpdIXWBZuPvoB54decPpTeQDdRdu9Ilo",
+    authDomain: "medule-c3261.firebaseapp.com",
+    databaseURL: "https://medule-c3261.firebaseio.com",
+    projectId: "medule-c3261",
+    storageBucket: "",
+    messagingSenderId: "1030045706317",
+    appId: "1:1030045706317:web:5ac9e23ff4d029f5"
+
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+​
+    <style> 
+        input[type=text] {
+          width: 250px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white;
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 40px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+          width: 100%;
+        }
+        </style>
+  
+<img src="screenshot__2_.png" alt="">
+<h1>Acount Settings</h1>
+<h2>Username</h2>
+​
+<form action="homepage.html">
+  This is the name other users will see when looking at your profile:<br>
+  <input id="name" type="text" name="username">
+  <br>
+  
+  
+</form> 
+​
+<h2>Age</h2>
+​
+<form action="homepage.html">
+  18 and over<br>
+  <input id="age" type="text" name="username">
+  <br>
+  
+</form> 
+​
+<h2>Location in Brooklyn</h2>
+<form action="homepage.html">
+  Choose from: Park Slope, Canarsie, Flatbush, Bedstuy, Brooklyn Heights<br>
+  <input id="location" type="text" name="username">
+  <br>
+  
+</form> 
+​
+<h2>Prescribed Medication</h2>
+​
+<form action="homepage.html" method="get">
+  Choose f<br>
+  <input id="sport" type="text" name="username" >
+  <br>
+  
+</form> 
+​
+<h2>Skill Level </h2>
+​
+<form action="homepage.html">
+  <br>
+  <input id="level" type="text" name="username">
+  <br>
+​
+</form>
+  
+<form action="">
+  <button onclick="writeData(event)">Save</button>
+  
+</form>
+<form action="homepage.html">
+  <button type="submit" id="home">Home</button>
+</form>
+​
+<script>
+  user="usr";
+  firebase.auth().onAuthStateChanged(function(user){
+    // if user is logged in
+​
+  if (user){
+      console.log(user.uid);
+​
+      firebase.database().ref(user.uid).on('value', function(data){
+      console.log(data.val());
+      document.getElementById('name').value = data.val().Name
+      document.getElementById('age').value = data.val().Age
+      document.getElementById('location').value = data.val().Location
+      document.getElementById('sport').value = data.val().Sport
+      document.getElementById('level').value = data.val().SkillLevel
+      
+​
+    })
+  }
+})
+​
+  function writeData(event){
+      console.log(event)
+    event.preventDefault();
+  if (usr){
+    firebase.database().ref(usr.uid).set({
+        Name: document.getElementById("name").value,
+        Age: document.getElementById("age").value,
+        Location: document.getElementById("location").value,
+        Sport: document.getElementById("sport").value,
+        SkillLevel: document.getElementById("level").value
+        
+        
+    });
+    
+      }}
+      </script>
+​
+</body>
+  
+</html>
