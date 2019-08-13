@@ -11,8 +11,7 @@ nav {
   
 }
 body{
-  display: flex; 
-  background-image: linear-gradient(rgb(246, 78, 69),rgb(223, 88, 83));
+    background-image: linear-gradient(rgb(246, 78, 69),rgb(223, 88, 83));
 }
 .Link {
     display: flex;
@@ -193,3 +192,11 @@ body{
     display: block;
   }
 
+  table, th, td {
+    margin-left: 20%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
