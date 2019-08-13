@@ -192,11 +192,19 @@ body{
     display: block;
   }
 
-  table, th, td {
+  table{
     margin-left: 20%;
+  }
+  
+  table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
   }
   th, td {
-    padding: 15px;
+    padding: 30px;
+    
   }
+  th {
+    text-align: left;
+  }
+  
