@@ -204,7 +204,29 @@ body{
     padding: 30px;
     
   }
+  /* Send Email to doctor */
   th {
     text-align: left;
   }
-  
+  .title {
+    margin-left: 50%;
+    font-size: 26px;
+  }
+  .text {
+    margin-left: 40%;
+  }
+  .name {
+    margin-left: 40%;
+  }
+  .mail {
+    margin-left: 40%;
+  }
+  .comment {
+    margin-left: 40%;
+  }
+  .submit {
+    margin-left: 40%;
+  }
+  .reset {
+    margin-left: 40%;
+  }
