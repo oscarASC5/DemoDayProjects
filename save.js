@@ -3,7 +3,9 @@ firebase.auth().onAuthStateChanged(function(user) {
         firebase.database().ref(user.uid).on('value', function(data) {
             console.log(data.val());
 
-        
+            const settings = document.querySelector(".username");
+            settings.innerText = data.val().name
+            
         })
     }
 })
